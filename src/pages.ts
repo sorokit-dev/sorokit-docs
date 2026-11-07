@@ -18,8 +18,12 @@ export interface Page extends PageMeta {
 
 const meta: PageMeta[] = [
   { slug: "getting-started", title: "Getting started", section: "Introduction" },
+  { slug: "status", title: "Status and limitations", section: "Introduction" },
   { slug: "guides/connect-a-wallet", title: "Connect a wallet", section: "Guides" },
   { slug: "guides/call-a-contract", title: "Call a contract", section: "Guides" },
+  { slug: "guides/ui-setup", title: "Set up @sorokit/ui", section: "UI components" },
+  { slug: "guides/transaction-toasts", title: "Transaction toasts", section: "UI components" },
+  { slug: "guides/theming", title: "Theming", section: "UI components" },
   { slug: "reference/use-wallet", title: "useWallet", section: "API reference" },
   { slug: "reference/use-contract", title: "useContract", section: "API reference" },
   { slug: "reference/use-soroban-call", title: "useSorobanCall", section: "API reference" },
