@@ -23,6 +23,8 @@ const meta: PageMeta[] = [
   { slug: "reference/use-wallet", title: "useWallet", section: "API reference" },
   { slug: "reference/use-contract", title: "useContract", section: "API reference" },
   { slug: "reference/use-soroban-call", title: "useSorobanCall", section: "API reference" },
+  { slug: "reference/wallet-adapters", title: "Wallet adapters", section: "API reference" },
+  { slug: "reference/types", title: "Types", section: "API reference" },
 ];
 
 export const pages: Page[] = meta.map((m) => {
