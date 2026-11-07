@@ -20,6 +20,9 @@ const meta: PageMeta[] = [
   { slug: "getting-started", title: "Getting started", section: "Introduction" },
   { slug: "guides/connect-a-wallet", title: "Connect a wallet", section: "Guides" },
   { slug: "guides/call-a-contract", title: "Call a contract", section: "Guides" },
+  { slug: "reference/use-wallet", title: "useWallet", section: "API reference" },
+  { slug: "reference/use-contract", title: "useContract", section: "API reference" },
+  { slug: "reference/use-soroban-call", title: "useSorobanCall", section: "API reference" },
 ];
 
 export const pages: Page[] = meta.map((m) => {
