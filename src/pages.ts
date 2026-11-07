@@ -18,6 +18,8 @@ export interface Page extends PageMeta {
 
 const meta: PageMeta[] = [
   { slug: "getting-started", title: "Getting started", section: "Introduction" },
+  { slug: "guides/connect-a-wallet", title: "Connect a wallet", section: "Guides" },
+  { slug: "guides/call-a-contract", title: "Call a contract", section: "Guides" },
 ];
 
 export const pages: Page[] = meta.map((m) => {
