@@ -1,22 +1,38 @@
 # Contributing to sorokit-docs
 
-This repository will hold the documentation site for [`@sorokit/core`](https://github.com/sorokit-dev/sorokit-core) and [`@sorokit/ui`](https://github.com/sorokit-dev/sorokit-ui). Good documentation is how most developers will first meet the project, so careful contributions here matter.
+This repository holds the documentation site for [`@sorokit/core`](https://github.com/sorokit-dev/sorokit-core) and [`@sorokit/ui`](https://github.com/sorokit-dev/sorokit-ui). Good documentation is how most developers will first meet the project, so careful contributions here matter.
 
-## Current status
+## Development setup
 
-The site itself has not been scaffolded yet. Until it is, the most useful contributions are:
+Requirements: Node.js 20 or newer and npm.
 
-- Proposing the documentation structure in an issue
-- Reporting inaccuracies in the READMEs of `sorokit-core` and `sorokit-ui`
-- Drafting guides in Markdown once the content layout is agreed
+```bash
+git clone https://github.com/sorokit-dev/sorokit-docs.git
+cd sorokit-docs
+npm install
+npm run dev
+```
 
-Check the open issues for what is ready to pick up.
+Before opening a pull request, make sure both of these pass (CI runs the same steps):
+
+```bash
+npm run typecheck
+npm run build
+```
+
+## How pages work
+
+Pages are Markdown files in `content/`. To add one:
+
+1. Create `content/<section>/<name>.md`.
+2. Register it in `src/pages.ts` with a slug (the path without `.md`), a title and a sidebar section.
+3. Link to other pages with `[text](#/slug)`. The build fails if a registered page has no file.
 
 ## Ways to contribute
 
 - Write or improve guides (installation, quick start, connecting a wallet, calling a contract)
 - Document the API of every exported hook and component
-- Build and polish the documentation site and its examples
+- Improve the documentation site and add interactive examples
 - Fix typos, broken links and unclear wording
 
 ## Stellar Wave issues
